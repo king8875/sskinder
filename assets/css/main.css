@@ -1,0 +1,116 @@
+/* MAIN PAGE CSS */
+main {
+    flex: 1;
+}
+
+
+
+
+/* hero section */
+.hero_section {}
+
+.hero_content {}
+
+.hero_content .img--block {
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+
+.hero_content .img--block {
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
+        url('/assets/img/hero_bg.jpg') no-repeat center/cover;
+    background-position: 50% 90%;
+}
+.hero_desc{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.hero_content .tx--block {
+}
+
+.hero_content .tx--block strong {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: var(--font-b);
+    font-size: 38px;
+    line-height: 1.4;
+    color: #fff;
+}
+.hero_content .tx--block .ko-tx{
+    margin-bottom: 10px;
+    font-weight: var(--font-m);
+    font-size: 18px;
+    line-height: 1.4;
+    color: #fff;
+}
+.hero_content .tx--block .en-tx{
+    max-width: 650px;
+    margin-bottom: 60px;
+    font-weight: var(--font-m);
+    font-size: 16px;
+    line-height: 1.4;
+    opacity: 0.8;
+    color: #fff;
+}
+
+.hero_content .hero_sns--block {
+    position: absolute;
+    display: flex;
+    gap: 20px;
+}
+
+.hero_content .hero_sns--block .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+.hero_content .hero_sns--block .yt_btn {
+    background: #EA383B;
+}
+.hero_content .hero_sns--block .instar_btn {
+    background: url(/assets/img/instar_bg.png);
+}
+
+
+
+/* edu_section */
+.edu_section{}
+.edu_content{
+    display: flex;
+    flex-direction: column;
+}
+.edu_content .edu_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.edu_content .edu_list .edu_item{}
+.edu_content .edu_list .edu_item a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.edu_content .edu_list .edu_item a .img--block{
+    border-radius: 10px;
+    overflow: hidden;    
+}
+.edu_content .edu_list .edu_item a .img--block img{
+    width: 100%;
+    height: 100%;
+}
+.edu_content .edu_list .edu_item a .tx--block{}
+.edu_content .edu_list .edu_item a .tx--block p{
+    font-weight: var(--font-b);
+    font-size: 20px;
+    color: #000;
+}

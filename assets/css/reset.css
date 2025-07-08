@@ -1,51 +1,106 @@
+:root {
+    /* color */
+    --primary-white: #ffffff;
+    --primary-black: #000000;
+    --primary-green: #4aaf46;
+    --font-eb: 800;
+    --font-b: 700;
+    --font-sb: 600;
+    --font-m: 500;
 
-:root{
-  
+    --odd-bg: #f7f7f7;
+    --fc-subtit: #585656;
+    --fz-maintit: 45px;
+    --fz-maintit--mobile: 30px;
+
+    --mobile-padding: 15px;
+
+    --box-shadow: rgba(0, 0, 0, 0.25) -2px 3px 90px -20px !important;
 }
 
 
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     color: inherit;
     font: inherit;
 }
 
-button {background:none;border:0;cursor:pointer;}
-a {text-decoration:none}
-table {border-collapse:collapse;border-spacing:0}
-ul{list-style: none;}
-fieldset,input{border: 0;}
-img, picture, video, canvas, svg {display: block;max-width:100%;object-fit: cover;}
-section{ position: relative; }
+button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
 
-html, body{
+a {
+    text-decoration: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+ul {
+    list-style: none;
+}
+
+fieldset,
+input {
+    border: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+section {
+    position: relative;
+    padding: 60px 0;
+}
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
-body{
+
+body {
     position: relative;
     word-break: keep-all;
-    font-family: "Pretendard", sans-serif !important;
+    font-family: "Paperlogy", sans-serif !important;
     letter-spacing: -0.025em;
+    line-height: 1.2;
     background: #fff;
     overflow-x: hidden;
+    
 
 }
 
 .side_bottom--block .side_bottom--right::-webkit-scrollbar {
-    display: none;                  /* Chrome, Safari, Edge */
+    display: none;
+    /* Chrome, Safari, Edge */
 }
+
 @media screen and (max-width:992px) {
     body {
-        -ms-overflow-style: none;  /* IE & Edge */
-        scrollbar-width: none;     /* Firefox */
+        -ms-overflow-style: none;
+        /* IE & Edge */
+        scrollbar-width: none;
+        /* Firefox */
     }
+
     body::-webkit-scrollbar {
-        display: none !important;             /* Safari & Chrome */
+        display: none !important;
+        /* Safari & Chrome */
         scrollbar-width: none !important;
     }
-    
+
 }

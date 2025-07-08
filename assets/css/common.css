@@ -18,7 +18,9 @@
     align-items: center;
     margin-bottom: 30px;
 }
-
+.lo_first{
+    margin-top: 110px;
+}
 /* 스와이퍼 버튼 초기화 */
 .swiper-button-prev:after,
 .swiper-button-next:after {
@@ -237,38 +239,6 @@ strong {
 
 
 
-
-@media screen and (max-width: 1400px) {
-    .d-none {
-        display: none !important;
-    }
-
-    .d-inline {
-        display: inline !important;
-    }
-
-    .d-inline-flex {
-        display: inline-flex !important;
-    }
-
-    .d-block {
-        display: block !important;
-    }
-
-    .d-flex {
-        display: flex !important;
-    }
-
-    .d-grid {
-        display: grid !important;
-    }
-
-    .d-table {
-        display: table !important;
-    }
-}
-
-
 /* arrow 애니메이션 */
 @keyframes firstArrowOut {
     to { transform: translateX(100%); opacity: 0; }
@@ -290,7 +260,7 @@ strong {
 
 
 @media screen and (min-width:993px) {
-    .section { padding: 100px 0; }
+    .section { padding: 60px 0; }
 }
 
 @media screen and (max-width:992px) {
