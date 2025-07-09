@@ -20,7 +20,7 @@ main {
 .hero_content .img--block {
     width: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)),
-        url('/assets/img/hero_bg.jpg') no-repeat center/cover;
+        url('https://github.com/king8875/sskinder/blob/main/assets/img/hero_bg.jpg') no-repeat center/cover;
     background-position: 50% 90%;
 }
 .hero_desc{
