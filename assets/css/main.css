@@ -75,6 +75,7 @@ main {
     border-radius: 50%;
     width: 70px;
     height: 70px;
+    transition: all .4s ease;
 }
 
 .hero_content .hero_sns--block .yt_btn {
@@ -85,7 +86,9 @@ main {
     background: url("../img/instar_bg.png");
 }
 
-
+.hero_content .hero_sns--block .btn:hover{
+    transform: translateY(-3px);
+}
 
 /* edu_section */
 .edu_section {}
