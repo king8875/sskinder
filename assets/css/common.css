@@ -18,9 +18,7 @@
     align-items: center;
     margin-bottom: 30px;
 }
-.lo_first{
-    /* margin-top: 50px; */
-}
+
 /* 스와이퍼 버튼 초기화 */
 .swiper-button-prev:after,
 .swiper-button-next:after {
@@ -100,26 +98,7 @@
     animation: secondArrowOut 0.4s ease forwards;
 }
 
-
-/* .tb_page_next--area:hover .more--block .first-arrow,
-.tb_page_prev--area:hover .more--block .first-arrow{
-    animation: firstArrowOut 0.4s ease forwards;
-}
-.tb_page_next--area:hover .more--block .second-arrow,
-.tb_page_prev--area:hover .more--block .second-arrow{
-    animation: secondArrowIn 0.4s ease forwards;
-}
-.tb_page_next--area:not(:hover) .more--block .first-arrow
-.tb_page_prev--area:not(:hover) .more--block .first-arrow{
-    animation: firstArrowIn 0.4s ease forwards;
-}
-.tb_page_next--area:not(:hover) .more--block .second-arrow,
-.tb_page_prev--area:not(:hover) .more--block .second-arrow{
-    animation: secondArrowOut 0.4s ease forwards;
-} */
-
-
-
+/* loading */
 #loading-overlay {
     position: fixed;
     top: 0;
