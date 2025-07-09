@@ -3,7 +3,7 @@ function headerInIt() {
 
     let lastScrollY = window.scrollY;
     const header = document.querySelector('.header');
-    const heroSection = document.querySelector('.lo-first-section');
+    const heroSection = document.querySelector('.lo_first');
 
     let ticking = false;
     let isHeaderHidden = false;
@@ -111,6 +111,20 @@ function sideMenuInIt() {
 
 
 
+function initGoToTop() {
+    const btn = document.getElementById('GoToTop');
+    if (!btn) return;
+
+    btn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // 부드러운 스크롤
+        });
+    });
+}
+document.querySelectorAll('a[href="#"]').forEach(link => {
+    link.addEventListener('click', e => e.preventDefault());
+});
 
 // // loading -- common
 // window.addEventListener('load', () => {

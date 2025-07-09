@@ -19,7 +19,7 @@
     margin-bottom: 30px;
 }
 .lo_first{
-    margin-top: 110px;
+    /* margin-top: 50px; */
 }
 /* 스와이퍼 버튼 초기화 */
 .swiper-button-prev:after,
@@ -82,35 +82,26 @@
 }
 
 /* hover했을시 */
-.search--list .search--item a:hover .first-arrow,
-.apply--item:hover .more--block .first-arrow,
 .more--block:hover .first-arrow,
-.notice_item.active:hover .first-arrow {
+.not_item .not_link:hover .more--block .first-arrow{
     animation: firstArrowOut 0.4s ease forwards;
 }
-.search--list .search--item a:hover .second-arrow,
-.apply--item:hover .more--block .second-arrow,
+
 .more--block:hover .second-arrow,
-.notice_item.active:hover .second-arrow {
+.not_item .not_link:hover .more--block .second-arrow{
     animation: secondArrowIn 0.4s ease forwards;
 }
 
 /* not hover했을시 */
-.search--list .search--item a:not(:hover) .first-arrow,
-.apply--item:not(:hover) .more--block .first-arrow,
-.more--block:not(:hover) .first-arrow,
-.notice_item.active:not(:hover) .first-arrow {
+.more--block:not(:hover) .first-arrow{
     animation: firstArrowIn 0.4s ease forwards;
 }
-.search--list .search--item a:not(:hover) .second-arrow,
-.apply--item:not(:hover) .more--block .second-arrow,
-.more--block:not(:hover) .second-arrow,
-.notice_item.active:not(:hover) .second-arrow {
+.more--block:not(:hover) .second-arrow{
     animation: secondArrowOut 0.4s ease forwards;
 }
 
 
-.tb_page_next--area:hover .more--block .first-arrow,
+/* .tb_page_next--area:hover .more--block .first-arrow,
 .tb_page_prev--area:hover .more--block .first-arrow{
     animation: firstArrowOut 0.4s ease forwards;
 }
@@ -125,7 +116,7 @@
 .tb_page_next--area:not(:hover) .more--block .second-arrow,
 .tb_page_prev--area:not(:hover) .more--block .second-arrow{
     animation: secondArrowOut 0.4s ease forwards;
-}
+} */
 
 
 
@@ -233,9 +224,16 @@ strong {
 .mt50{
     margin-top: 50px;
 }
-
-
-
+.op-25{
+    opacity: 0.25;
+}
+.op-20{
+    opacity: 0.2;
+}
+.mb20{
+    display: block;
+    margin-bottom: 20px;
+}
 
 
 
@@ -264,7 +262,7 @@ strong {
 }
 
 @media screen and (max-width:992px) {
-    .section { padding: 50px 0px; }
+    section { padding: 30px 0px; }
     .main-tit { font-size: 28px; }
     .main-subtit { font-size: 16px; }
     .bold_18 { font-size: 16px !important; }
@@ -278,4 +276,7 @@ strong {
     }
     .mt100{ margin-top: 50px; }
     .mt50{ margin-top: 25px; }
+    .lo_first{
+        margin-top: 20px;
+    }
 }
