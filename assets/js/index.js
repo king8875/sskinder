@@ -122,6 +122,44 @@ function initGoToTop() {
         });
     });
 }
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // 프리티포토
+    const links = document.querySelectorAll('.lightbox-link');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const caption = document.getElementById('lightbox-caption');
+    const closeBtn = document.getElementById('lightbox-close');
+
+    links.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            lightboxImg.src = this.getAttribute('href');
+            caption.textContent = this.getAttribute('data-title') || '';
+            lightbox.classList.add('show');
+        });
+    });
+
+    closeBtn.addEventListener('click', () => {
+        lightbox.classList.remove('show');
+    });
+
+    lightbox.addEventListener('click', e => {
+        if (e.target === lightbox) {
+            lightbox.classList.remove('show');
+        }
+    });
+
+    // ESC 키로 닫기
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            lightbox.classList.remove('show');
+        }
+    });
+});
 document.querySelectorAll('a[href="#"]').forEach(link => {
     link.addEventListener('click', e => e.preventDefault());
 });
